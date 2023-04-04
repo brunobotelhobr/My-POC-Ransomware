@@ -118,7 +118,6 @@ if __name__ == "__main__":
         response = requests.post(full_url, headers=headers, json=data)
         key = str(response.content.decode("utf-8")).replace('"', '')
         key = key.encode("utf-8")
-        print(key)
 
     else:
         key = args.key.encode("utf-8")

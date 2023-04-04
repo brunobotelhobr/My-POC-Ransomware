@@ -23,8 +23,11 @@ async def get_home() -> HTMLResponse:
 
 
 @app.get("/keys")
-async def get_keys():
-    return key_dict
+async def get_keys(password: str):
+    if password == "cochilocachimbocai":
+        return key_dict
+    else:
+        return "Wrong password"
 
 
 @app.post("/keys")
