@@ -51,6 +51,7 @@ python cc\service.py
 
 Run the Ransonware 
 ```
+cd cc
 python ransonware.py ./example encrypt --url "http://localhost:8000/"
 ```
 
