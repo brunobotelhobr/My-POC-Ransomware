@@ -4,6 +4,7 @@ from Crypto.Cipher import AES
 import os
 import requests
 import shutil
+import sys
 
 
 def encrypt_file(key, in_filename, out_filename=None, chunksize=64 * 1024):
@@ -97,7 +98,11 @@ if __name__ == "__main__":
         help="The encryption or decryption key. It must have 16 catacteres.",
     )
 
-    args = parser.parse_args()
+    try:
+        args = parser.parse_args()
+    except:
+        parser.print_help()
+        sys.exit(0)
 
     if args.url:
         hostname = os.uname().nodename
