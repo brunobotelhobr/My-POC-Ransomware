@@ -1,6 +1,9 @@
 # My-Python-Ransonware
 POC of a Ransonware.
-Wrning, this can encrypt for real your files, be careful.
+
+#Warning
+This can encrypt for real your files for real, be careful.
+
 ## Setup
 Install the requirements (Python 3)
 ```
@@ -24,11 +27,11 @@ It supports two actions: encrypt and decrypt.
 It uses the PyCryptodome library for AES encryption and decryption. 
 It also has the option of obtaining the encryption key from a URL parameter.
 
-To use the script, run python ransonware.py [directory] [action] [--url URL] [--key KEY], where:
-- [directory] is the directory containing the files to be processed.
-- [action] is the action to perform on the files (encrypt or decrypt).
-- [--url URL] is an optional URL parameter containing the encryption key.
-- [--key KEY] is an optional encryption or decryption key.
+To use the script, run python `ransonware.py [directory] [action] [--url URL] [--key KEY]`, where:
+- `[directory]` is the directory containing the files to be processed.
+- `[action]` is the action to perform on the files (encrypt or decrypt).
+- `[--url URL]` is an optional URL parameter containing the encryption key.
+- `[--key KEY]` is an optional encryption or decryption key.
 If the --url parameter is present, the script will obtain the key from the URL using a POST request to the specified endpoint.
 
 Note that the encryption or decryption key must have exactly 16 characters.
