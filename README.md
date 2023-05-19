@@ -1,5 +1,5 @@
-# My-Python-Ransonware
-POC of a Ransonware.
+# My-Python-Ransomware
+POC of a Ransomware.
 
 #Warning
 This can encrypt for real your files for real, be careful.
@@ -21,13 +21,13 @@ The server can be started by running main() function in the script.
 
 To access the documentation access: `http://localhsot:8000/docs`
 
-## ransonware.py
+## ransomware.py
 Is a command-line tool for encrypting or decrypting all files in a directory. 
 It supports two actions: encrypt and decrypt. 
 It uses the PyCryptodome library for AES encryption and decryption. 
 It also has the option of obtaining the encryption key from a URL parameter.
 
-To use the script, run python `ransonware.py [directory] [action] [--url URL] [--key KEY]`, where:
+To use the script, run python `ransomware.py [directory] [action] [--url URL] [--key KEY]`, where:
 - `[directory]` is the directory containing the files to be processed.
 - `[action]` is the action to perform on the files (encrypt or decrypt).
 - `[--url URL]` is an optional URL parameter containing the encryption key.
@@ -39,8 +39,8 @@ Note that the encryption or decryption key must have exactly 16 characters.
 ## Examples
 ### Encrypt and Decrypt with password:
 ````
-python ransonware.py example decrypt --key abcdef0123456789   
-python ransonware.py example decrypt --key abcdef0123456789          
+python ransomware.py example decrypt --key abcdef0123456789   
+python ransomware.py example decrypt --key abcdef0123456789          
 ````
 
 ### Using the CC
@@ -49,13 +49,13 @@ Start the server:
 python cc\service.py
 ```
 
-Run the Ransonware 
+Run the Ransomware 
 ```
 cd cc
-python ransonware.py ./example encrypt --url "http://localhost:8000/"
+python ransomware.py ./example encrypt --url "http://localhost:8000/"
 ```
 
 Get the password on http://localhsot:8000/docs
 ```
-python ransonware.py example decrypt --key abcdef0123456789   
+python ransomware.py example decrypt --key abcdef0123456789   
 ```
