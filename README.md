@@ -55,7 +55,7 @@ cd cc
 python ransomware.py ./example encrypt --url "http://localhost:8000/"
 ```
 
-Get the password on http://localhsot:8000/docs
+Get the password on `http://localhost:8000/docs`
 ```
 python ransomware.py example decrypt --key abcdef0123456789   
 ```
