@@ -2,7 +2,7 @@
 POC of a Ransomware.
 
 #Warning
-This can encrypt for real your files for real, be careful.
+This can encrypt for real your files for real, be careful, use only for study, idealy in a Virtual Machine.
 
 ## Setup
 Install the requirements (Python 3)
