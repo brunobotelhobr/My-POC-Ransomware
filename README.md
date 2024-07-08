@@ -1,8 +1,8 @@
 # My-Python-Ransomware
 POC of a Ransomware.
 
-#Warning
-This can encrypt for real your files for real, be careful, use only for study, idealy in a Virtual Machine.
+# Warning
+This can encrypt for real your files for real, so be careful and use it only for study, ideally in a Virtual Machine.
 
 ## Setup
 Install the requirements (Python 3)
@@ -11,7 +11,7 @@ pip3 install -r requirements.txt
 ```
 
 ## cc\service.py 
-Is a simple FastAPI server that generates and returns a random encryption key for a given hostname. 
+It is a simple FastAPI server that generates and returns a random encryption key for a given hostname. 
 It has the following endpoints:
 
 `/`: Returns an HTML homepage.
@@ -19,10 +19,10 @@ It has the following endpoints:
 `/keys`: (POST): Generates and returns an encryption key for the given hostname.
 The server can be started by running main() function in the script.
 
-To access the documentation access: `http://localhsot:8000/docs`
+To access the documentation, access: `http://localhsot:8000/docs`
 
 ## ransomware.py
-Is a command-line tool for encrypting or decrypting all files in a directory. 
+It is a command-line tool for encrypting or decrypting all files in a directory. 
 It supports two actions: encrypt and decrypt. 
 It uses the PyCryptodome library for AES encryption and decryption. 
 It also has the option of obtaining the encryption key from a URL parameter.
